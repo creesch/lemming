@@ -3,4 +3,4 @@
 	url = https://github.com/SirCmpwn/RedditSharp.git
 [submodule "ChatSharp"]
 	path = ChatSharp
-	url = https://github.com/SirCmpwn/ChatSharp.git
+	url = https://github.com/creesch/ChatSharp/ChatSharp.git
