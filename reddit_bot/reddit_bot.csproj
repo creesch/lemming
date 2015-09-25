@@ -33,14 +33,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="ChatSharp, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>libs\ChatSharp.dll</HintPath>
-    </Reference>
-    <Reference Include="RedditSharp, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>libs\RedditSharp.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.configuration" />
     <Reference Include="System.Core" />
@@ -59,12 +51,17 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="libs\ChatSharp.dll" />
-    <Content Include="libs\ChatSharp.pdb" />
-    <Content Include="libs\HtmlAgilityPack.dll" />
-    <Content Include="libs\Newtonsoft.Json.dll" />
-    <Content Include="libs\RedditSharp.dll" />
-    <Content Include="libs\RedditSharp.pdb" />
+    <ProjectReference Include="..\ChatSharp\ChatSharp\ChatSharp.csproj">
+      <Project>{4033affa-bea3-4bdf-84ea-59a23360fd36}</Project>
+      <Name>ChatSharp</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\RedditSharp\RedditSharp\RedditSharp.csproj">
+      <Project>{a368cb75-75f0-4489-904d-b5cebb0fe624}</Project>
+      <Name>RedditSharp</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="libs\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -1,0 +1,6 @@
+[submodule "RedditSharp"]
+	path = RedditSharp
+	url = https://github.com/SirCmpwn/RedditSharp.git
+[submodule "ChatSharp"]
+	path = ChatSharp
+	url = https://github.com/SirCmpwn/ChatSharp.git
